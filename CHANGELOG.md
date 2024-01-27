@@ -3,6 +3,20 @@
 
 ### Bug Fixes
 
+* **scrip:** fix the script ([e53fb95](https://github.com/pratham348/semantic-release-demo/commit/e53fb954b0738dddd6f8e4e19d7d101c57067c3f))
+* **scrip:** fix the script ([3799d63](https://github.com/pratham348/semantic-release-demo/commit/3799d6315a4c24c403f793099fbd326c4d338c06))
+
+
+### Features
+
+* **script:** updated the script ([715e96d](https://github.com/pratham348/semantic-release-demo/commit/715e96d5770977d6034b6dea73a9abed136e675d))
+* **script:** updated the script ([63a51d3](https://github.com/pratham348/semantic-release-demo/commit/63a51d331e2cc4a3d2397358ffeed19765fd661c))
+
+# [1.8.0](https://github.com/pratham348/semantic-release-demo/compare/v1.7.0...v1.8.0) (2024-01-27)
+
+
+### Bug Fixes
+
 * **scrip:** fix the script ([3799d63](https://github.com/pratham348/semantic-release-demo/commit/3799d6315a4c24c403f793099fbd326c4d338c06))
 
 
