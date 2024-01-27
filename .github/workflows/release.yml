@@ -1,4 +1,4 @@
-name: Semantic release 
+name: Semantic Release
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   issues: write
   pull-requests: write
   id-token: write
-
+  
 jobs:
   release:
     runs-on: ubuntu-latest

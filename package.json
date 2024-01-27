@@ -15,18 +15,10 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1"
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^17.0.0"
   },
-  "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    "@semantic-release/github",
-    "@semantic-release/npm",
-    "@semantic-release/git"
-  ],
   "release": {
-    "repository": "https://github.com/pratham348/semantic-release-demo",
     "branches": [
       "main"
     ],
@@ -43,5 +35,8 @@
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ]
+  },
+  "repository": {
+    "url": "https://github.com/pratham348/semantic-release-demo"
   }
 }
