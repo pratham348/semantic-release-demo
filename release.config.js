@@ -8,11 +8,12 @@ module.exports = {
       '@semantic-release/npm', 
       '@semantic-release/github',
       '@semantic-release/git',
-      {
-        "path": "@semantic-release/exec",
-        "cmd": "node update-version ${nextRelease.version}",
-      },
-       
+      [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "NEXT_RELEASE_VERSION=${nextRelease.version} node ./update-version.js"
+        }
+      ]
     ],
   };
   
