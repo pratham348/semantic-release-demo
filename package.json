@@ -26,6 +26,7 @@
     "@semantic-release/git"
   ],
   "release": {
+    "repository": "https://github.com/pratham348/semantic-release-demo",
     "branches": [
       "main"
     ],
