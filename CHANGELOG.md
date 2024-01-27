@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/pratham348/semantic-release-demo/compare/v1.5.0...v1.6.0) (2024-01-27)
+
+
+### Features
+
+* **app:** updated the script to get the proper version ([d692e99](https://github.com/pratham348/semantic-release-demo/commit/d692e99170342839f92549b083100682b4a200ab))
+
 # [1.5.0](https://github.com/pratham348/semantic-release-demo/compare/v1.4.0...v1.5.0) (2024-01-27)
 
 
