@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/pratham348/semantic-release-demo/compare/v1.2.0...v1.3.0) (2024-01-27)
+
+
+### Features
+
+* **app:** updated the release configs ([612e86a](https://github.com/pratham348/semantic-release-demo/commit/612e86a28e4e9dd643a77d6531d6090e108833e3))
+
 # [1.2.0](https://github.com/pratham348/semantic-release-demo/compare/v1.1.0...v1.2.0) (2024-01-27)
 
 
