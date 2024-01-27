@@ -1,15 +1,20 @@
 const fs = require('fs');
+const path = require('path');
 
-try {
-  const version = process.env.npm_package_version || 'fallback version';
+const versionJsonPath = path.join(process.cwd(), 'version.json');
+console.log('versionJsonPath',versionJsonPath);
+const incrementVersion = newVersion => {
+  const versionJson = JSON.parse(fs.readFileSync(versionJsonPath, 'utf8'));
+  versionJson.version = newVersion;
+  fs.writeFileSync(versionJsonPath, JSON.stringify(versionJson, null, 2) + '\n', 'utf8');
+  console.log(`Version forcefully updated to: ${newVersion}`);
+};
 
-  const data = {
-    version: version,
-  };
+const newVersion = process.argv[2];
 
-  fs.writeFileSync('version.json', JSON.stringify(data, null, 2));
-
-  console.log('version.json updated with version:', version);
-} catch (error) {
-  console.error('Error updating version.json:', error.message);
+if (!newVersion) {
+  console.error('Error: Please provide a new version number.');
+  process.exit(1);
 }
+
+incrementVersion(newVersion);
