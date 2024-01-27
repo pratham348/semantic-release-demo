@@ -1,6 +1,6 @@
 const fs = require('fs');
-
-const version = process.env.npm_package_version;
+const packageJson = require('./package.json');
+const version = packageJson.version;
 console.log("version", version);
 const data = {
   version: version,
