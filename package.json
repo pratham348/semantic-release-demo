@@ -22,21 +22,8 @@
     "branches": [
       "main"
     ],
-    "prepare": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      {
-        "path": "@semantic-release/git",
-        "assets": [
-          "package.json",
-          "package-lock.json",
-          "CHANGELOG.md"
-        ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
-    ]
-  },
-  "repository": {
-    "url": "https://github.com/pratham348/semantic-release-demo"
+    "repository": {
+      "url": "https://github.com/pratham348/semantic-release-demo"
+    }
   }
 }
