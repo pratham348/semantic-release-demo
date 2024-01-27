@@ -1,3 +1,4 @@
+const jsonfile = require('jsonfile');
 module.exports = {
     branches: ['main'],
     plugins: [
