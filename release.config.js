@@ -10,18 +10,11 @@ module.exports = {
       '@semantic-release/github',
       {
         // Custom plugin for updating version.json
-        async prepare(pluginConfig, context) {
-            console.log("pluginConfig",pluginConfig);
-          const { nextRelease } = context;
-          console.log('nextRelease',nextRelease)
+        async prepare(pluginConfig, { nextRelease }) {
           const versionFilePath = './version.json';
-  console.log('versionFilePath',versionFilePath)
-          const versionData = {
-            version: nextRelease.version,
-          };
-          console.log('versionData',versionData)
-  
-          await jsonfile.writeFile(versionFilePath, versionData, { spaces: 2 });
+          console.log("versionFilePath", versionFilePath);
+          console.log('nextRelease.version',nextRelease.version);
+          await jsonfile.writeFile(versionFilePath, { version: nextRelease.version }, { spaces: 2 });
   
           return {};
         },
