@@ -1,6 +1,19 @@
 # [1.1.0](https://github.com/pratham348/semantic-release-demo/compare/v1.0.0...v1.1.0) (2024-01-27)
 
 
+### Bug Fixes
+
+* **jsonfile:** fixed the json file issue ([df7cac9](https://github.com/pratham348/semantic-release-demo/commit/df7cac944344d13f8b99367fd1468e57c3f331c8))
+
+
+### Features
+
+* **versioning:** added version.json file and added step to wrtie in that file with new release ([d8d72fe](https://github.com/pratham348/semantic-release-demo/commit/d8d72fe9d074b57e6e465a82ae11c29c76874e72))
+* **versioning:** added version.json file and added step to wrtie in that file with new release ([315b552](https://github.com/pratham348/semantic-release-demo/commit/315b552f6124ecc05316eb71d738c1905eceb68a))
+
+# [1.1.0](https://github.com/pratham348/semantic-release-demo/compare/v1.0.0...v1.1.0) (2024-01-27)
+
+
 ### Features
 
 * **versioning:** added version.json file and added step to wrtie in that file with new release ([d8d72fe](https://github.com/pratham348/semantic-release-demo/commit/d8d72fe9d074b57e6e465a82ae11c29c76874e72))
