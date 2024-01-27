@@ -2,13 +2,14 @@
   "name": "semantic-release-demo",
   "version": "1.8.0",
   "private": true,
+  "main": "update-version.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "semantic-release": "semantic-release",
-    "update-version": "node update-version.js"
+    "version": "node update-version.js"
   },
   "engines": {
     "node": "14.x",
@@ -19,7 +20,8 @@
     "jsonfile": "^6.1.0",
     "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "semver": "^7.5.4"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",

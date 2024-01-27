@@ -1,22 +1,17 @@
-const fs = require('fs');
-const path = require('path');
+let fs = require('fs');
+let semver = require('semver');
 
-const versionJsonPath = path.join(process.cwd(), 'version.json');
-console.log('versionJsonPath',versionJsonPath);
+if (fs.existsSync('./version.json')) {
+    var versionFile = require('./version.json');
+    let currentVersion = versionFile.version;
+    let type = process.argv[2];
+    if (!['major', 'minor', 'patch'].includes(type)) {
+        type = 'patch';
+    }
 
-const incrementVersion = newVersion => {
-  const versionJson = JSON.parse(fs.readFileSync(versionJsonPath, 'utf8'));
-  versionJson.version = newVersion;
-  
-  fs.writeFileSync(versionJsonPath, JSON.stringify(versionJson, null, 2) + '\n', 'utf8');
-  console.log(`Version forcefully updated to: ${newVersion}`);
-};
+    let newVersion = semver.inc(versionFile.version, type);
+    versionFile.version = newVersion;
+    fs.writeFileSync('./version.json', JSON.stringify(versionFile, null, 2));
 
-const newVersion = process.argv[2];
-
-if (!newVersion) {
-  console.error('Error: Please provide a new version number.');
-  process.exit(1);
+    console.log('Version updated', currentVersion, '=>', newVersion);
 }
-
-incrementVersion(newVersion);
