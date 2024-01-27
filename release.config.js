@@ -11,7 +11,9 @@ module.exports = {
       {
         // Custom plugin for updating version.json
         async prepare(pluginConfig, context) {
+            console.log("pluginConfig",pluginConfig);
           const { nextRelease } = context;
+          console.log('nextRelease',nextRelease)
           const versionFilePath = './version.json';
   console.log('versionFilePath',versionFilePath)
           const versionData = {
