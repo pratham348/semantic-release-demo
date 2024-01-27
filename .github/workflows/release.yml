@@ -1,22 +1,28 @@
-name: Semantic release 
+name: Semantic Release
 
 on:
   push:
     branches:
       - main
+
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Install dependencies
-        run: npm install 
-      - name: Semantic release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPOSITORY_URL: https://github.com/pratham348/semantic-release-demo
-        run: npx semantic-release
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Use Node.js 14
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run semantic-release
+      run: npx semantic-release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPOSITORY_URL: https://github.com/pratham348/semantic-release-demo
