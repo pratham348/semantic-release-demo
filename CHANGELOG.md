@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/pratham348/semantic-release-demo/compare/v1.1.0...v1.2.0) (2024-01-27)
+
+
+### Features
+
+* **app:** added the version.json file ([273485f](https://github.com/pratham348/semantic-release-demo/commit/273485fe29c6b055318cd845a8c0dfc10104086e))
+
 # [1.1.0](https://github.com/pratham348/semantic-release-demo/compare/v1.0.0...v1.1.0) (2024-01-27)
 
 
