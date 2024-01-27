@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/pratham348/semantic-release-demo/compare/v1.7.0...v1.8.0) (2024-01-27)
+
+
+### Features
+
+* **script:** updated the script ([715e96d](https://github.com/pratham348/semantic-release-demo/commit/715e96d5770977d6034b6dea73a9abed136e675d))
+* **script:** updated the script ([63a51d3](https://github.com/pratham348/semantic-release-demo/commit/63a51d331e2cc4a3d2397358ffeed19765fd661c))
+
 # [1.6.0](https://github.com/pratham348/semantic-release-demo/compare/v1.5.0...v1.6.0) (2024-01-27)
 
 
